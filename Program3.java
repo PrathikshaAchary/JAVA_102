@@ -15,3 +15,4 @@ public class Program3 {
         g.play(10,"Messi");
     }
 }
+//Polymorphism(sequence of argumnet);
