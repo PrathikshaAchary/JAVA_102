@@ -24,4 +24,4 @@ public class Program1 {
         
     }
 }
-//Metod overloading;
+//Polymorphism(type of argumnet);
