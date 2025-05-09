@@ -24,9 +24,36 @@ public class StackImplementation
             stack[top]=x;
             System.out.println("Inserted Element:"+x);
           
+        }}
+        boolean isEmpty()
+        {
+            if(top==-1)
+            {
+                return true;
+                
+                
+            }
+            else
+            {
+                return false;
+                        
+            }
+        }
+        void pop()
+        {
+            if(isEmpty())
+            {
+                System.out.println("Underflow state");
+                
+            }
+            else
+            {
+                System.out.println(stack[top]+" "+"popped");
+                top--;
+            }
         }
         
-    }
+    
 
     public static void main(String[] args)
     {
@@ -35,7 +62,13 @@ public class StackImplementation
       si.push(20);
       si.push(30);
       si.push(40);
-        
+      System.out.println(si.isEmpty());
+      si.pop();
+      si.pop();
     }
     
 }
+//Inserted Element:10
+//Inserted Element:20
+//Inserted Element:30
+//Overflow state
