@@ -52,7 +52,17 @@ public class StackImplementation
                 top--;
             }
         }
-        
+        int topElement()
+        {
+            return stack[top];
+            
+            
+        }
+        int size()
+        {
+            return top+1;
+            
+        }
     
 
     public static void main(String[] args)
@@ -65,6 +75,8 @@ public class StackImplementation
       System.out.println(si.isEmpty());
       si.pop();
       si.pop();
+        System.out.println(si.topElement()+" "+si.size());
+      
     }
     
 }
@@ -72,3 +84,6 @@ public class StackImplementation
 //Inserted Element:20
 //Inserted Element:30
 //Overflow state
+//false
+//30 popped
+//20 popped
